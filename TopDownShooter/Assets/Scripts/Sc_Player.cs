@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Sc_Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Parametrs")]
+    [SerializeField] private float speed;
+    private Vector2 direction;
+    private Rigidbody2D rigidBody;
+
+    private void Start()
     {
-        
+       rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
+    }
+    private void FixedUpdate()
+    {
+        rigidBody.MovePosition(rigidBody.position + direction * speed * Time.deltaTime);
     }
 }

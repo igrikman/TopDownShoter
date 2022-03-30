@@ -15,11 +15,11 @@ E:/TopDownShoter/TopDownShooter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61447
+50380
 Successfully changed project path to: E:/TopDownShoter/TopDownShooter
 E:/TopDownShoter/TopDownShooter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 92.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 90.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.28f1 (f5400f52e03f)
 [Subsystems] Discovering subsystems at path E:/Unity/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
@@ -35,92 +35,92 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2020.3.28f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2020.3.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Unity/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002200 seconds.
+Registered in 0.001955 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 93.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 100.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.015 seconds
+- Completed reload, in  1.001 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1016ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1002ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (803ms)
-			LoadAssemblies (91ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
+			SetupTypeCache (265ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (308ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (135ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (29ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005168 seconds.
+Registered in 0.005710 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 96.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 116.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.999 seconds
+- Completed reload, in  1.960 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2001ms)
-		BeginReloadAssembly (270ms)
+	ReloadAssembly (1961ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1623ms)
-			LoadAssemblies (156ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1597ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (575ms)
+			SetupTypeCache (562ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (104ms)
-			SetupLoadedEditorAssemblies (592ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (595ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (97ms)
-				BeforeProcessingInitializeOnLoad (141ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (117ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (315ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2207 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2210 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 97.2 MB.
-System memory in use after: 97.1 MB.
+System memory in use after: 97.2 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2638.
-Total: 5.715700 ms (FindLiveObjects: 0.360000 ms CreateObjectMapping: 0.117100 ms MarkObjects: 5.013800 ms  DeleteObjects: 0.223300 ms)
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2641.
+Total: 4.346700 ms (FindLiveObjects: 0.302200 ms CreateObjectMapping: 0.109500 ms MarkObjects: 3.723000 ms  DeleteObjects: 0.210900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,89 +134,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Joystick Pack
-  artifactKey: Guid(67a99000e6b7f1549b452d4a60101885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack using Guid(67a99000e6b7f1549b452d4a60101885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042488e20395fa4754ccc3d8105a6667') in 0.005345 seconds 
-  Import took 0.009900 seconds .
+  path: Assets/Graphics/Sprite_Level/Brick.png
+  artifactKey: Guid(04ce1ce4b2804c7459fa1b31c7b40dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Sprite_Level/Brick.png using Guid(04ce1ce4b2804c7459fa1b31c7b40dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c72bb99434fa4cc07ddabc03d4c4fbc') in 10.040404 seconds 
+  Import took 10.074516 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 2.688168 seconds.
-  path: Assets/Scenes/Level 0.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 0.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daabf6e51829f8d8515f1586531a20b8') in 0.018322 seconds 
-  Import took 0.022727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.741208 seconds.
-  path: Assets/Scripts/Joystick Pack/Prefabs
-  artifactKey: Guid(d41e4075f56d1e1438b3af3673ec6081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Prefabs using Guid(d41e4075f56d1e1438b3af3673ec6081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54cb6ea702f71956222b34d2d39ed42') in 0.001521 seconds 
-  Import took 0.006355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.278076 seconds.
-  path: Assets/Scripts/Joystick Pack/Prefabs/Dynamic Joystick.prefab
-  artifactKey: Guid(56fae09712773584fb63896d473a98ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Prefabs/Dynamic Joystick.prefab using Guid(56fae09712773584fb63896d473a98ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9f55fe1502f73a56232c5c75464292') in 0.063404 seconds 
-  Import took 0.069974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Scripts/Joystick Pack/Prefabs/Variable Joystick.prefab
-  artifactKey: Guid(ec536a7718376554185e4a856d5ae230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Prefabs/Variable Joystick.prefab using Guid(ec536a7718376554185e4a856d5ae230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b221b5505f43f1db819e6ee051664b') in 0.009697 seconds 
-  Import took 0.014014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Scripts/Joystick Pack/Prefabs/Fixed Joystick.prefab
-  artifactKey: Guid(aaa2c939c0359ac4dbce3f49e8b90252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Prefabs/Fixed Joystick.prefab using Guid(aaa2c939c0359ac4dbce3f49e8b90252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cae482df93c75b1168002e071d47f0a') in 0.007039 seconds 
-  Import took 0.012313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Scripts/Joystick Pack/Prefabs/Floating Joystick.prefab
-  artifactKey: Guid(0d230cc8be529a542a08cb878ab14b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Prefabs/Floating Joystick.prefab using Guid(0d230cc8be529a542a08cb878ab14b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf4b2d4a6d2c171fec0cc0e5e29b8ed') in 0.007686 seconds 
-  Import took 0.012998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.363099 seconds.
-  path: Assets/Scripts/Joystick Pack/Examples
-  artifactKey: Guid(5a71259a40885244a8fda03175513ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Examples using Guid(5a71259a40885244a8fda03175513ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3960a0b5324a394df56060d477d3f829') in 0.001671 seconds 
-  Import took 0.008140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.059790 seconds.
-  path: Assets/Scripts/Joystick Pack/Examples/Ground.mat
-  artifactKey: Guid(c569c280f0eb52a49a7b2a6b8b0cbcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Examples/Ground.mat using Guid(c569c280f0eb52a49a7b2a6b8b0cbcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb0a40c424b7257f928bf284061c557') in 0.448844 seconds 
-  Import took 0.453739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Scripts/Joystick Pack/Examples/Player.mat
-  artifactKey: Guid(59e4faf24927edf4a82f463ad16f1c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Examples/Player.mat using Guid(59e4faf24927edf4a82f463ad16f1c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99486deed5d786b1ab9c132d4469fda8') in 0.011342 seconds 
-  Import took 0.015782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.585916 seconds.
-  path: Assets/Scripts/Joystick Pack/Sprites
-  artifactKey: Guid(f36f8459cb8c3fd44ba4390ba9652af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Joystick Pack/Sprites using Guid(f36f8459cb8c3fd44ba4390ba9652af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe99dba3aae57c03c565a1be73e4091') in 0.001722 seconds 
-  Import took 0.007173 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
