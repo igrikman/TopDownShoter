@@ -162,9 +162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a94d65a5f2323e428c7b207e26401e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  Player: {fileID: 1586624210}
-  Camera: {fileID: 519420028}
+  speed: 5
+  player: {fileID: 1586624210}
+  leftLimit: 8.8
+  rightLimit: 74.2
+  bottomLimit: -29
+  upperLimit: -2.02
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -216,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.1, y: -2.15, z: -11}
+  m_LocalPosition: {x: 69.1, y: -2.15, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53383,6 +53386,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1285109777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285109778}
+  m_Layer: 0
+  m_Name: Shot_Direction
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1285109778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285109777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.15, y: -0.568, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1586624214}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1586624210
 GameObject:
   m_ObjectHideFlags: 0
@@ -53439,7 +53472,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1586624213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53501,7 +53534,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 74.03, y: -2.95, z: 1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 1285109778}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53518,3 +53552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  health: 1
+  shotDirection: {fileID: 1285109778}
+  pistolBullet: {fileID: 961280558328534146, guid: 18b28e9ad52304541b800e2ee5493253, type: 3}
+  statrTime: 0.4
