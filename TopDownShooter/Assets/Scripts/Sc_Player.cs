@@ -26,8 +26,8 @@ public class Sc_Player : MonoBehaviour
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
 
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition)- transform.position;
-        float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0,0,rotateZ);
+        float angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0,0, angle);
         if(timeShot <= 0)
         {
             if (Input.GetMouseButtonDown(0))
