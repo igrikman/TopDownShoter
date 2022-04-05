@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+////Нужно:
+//1. Если игрок умер перестать его преследовать и занять случайную/последнюю позицию
+//2. Навести порядок в коде;
+
 public class Sc_Camera : MonoBehaviour
 {
     [Header("Parametrs")]

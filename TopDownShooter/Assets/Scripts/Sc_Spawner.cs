@@ -2,42 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+////Нужно:
+//1. Ограничение на спавн противника;
+//2. Ограничение по времени спавна;
+//3. Проверка на жив ли игрок;
+//4. Система очков;
+//5. Бонусы;
+//6. Увеличение скорости;
+//7. Навести порядок в коде;
+
 public class Sc_Spawner : MonoBehaviour
 {
-    [SerializeField] private List<Transform> spawnPoints = new List<Transform>();
+    [Header("Parametrs")]
+    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private GameObject enemyPrefabs;
+    [SerializeField] private Sc_Player player;
+    [SerializeField] private Sc_Enemy enemyPrefab;
     [SerializeField] private float spawnDelay;
-    [SerializeField] private List<GameObject> enemyPrefabs = new List<GameObject>();
-    private int amountEnemies = 5;
     private void Start()
-    { 
-            StartCoroutine(spawn());  
-    }
-    private void SpawnEnemy()
     {
-        for (int i = 0; i < amountEnemies; i++)
-        {
-            Transform spawnPoint = GetRandomSpawnPoint();
-            GameObject enemy = SpawnEnemy(spawnPoint);
-        }
+        InvokeRepeating("Spawn", spawnDelay, spawnDelay);
     }
-    private Transform GetRandomSpawnPoint()
+    public void Spawn()
     {
-        return spawnPoints[Random.Range(0, spawnPoints.Count)];
-    }
 
-    private GameObject SpawnEnemy(Transform spawnPoint)
-    {
-        var prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
-        return Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+        int spawnPointIndex = Random.Range(0, spawnPoints.Length);
+        var enemy = Instantiate(enemyPrefabs, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+        enemyPrefab.SetPlayer(player.transform);
     }
-
-    IEnumerator spawn ()
-    {
-        yield return new WaitForSeconds(spawnDelay);
-        SpawnEnemy();
-    }    
 
 
 
 
 }
+

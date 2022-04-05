@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+////Нужно:
+//1. Появление вспышки при выстреле;
+//2. Звук выстрела;
+//3. Навести порядок в коде;
+
 public class Sc_PistolBullet : MonoBehaviour
 {
     [SerializeField] private float speed;

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+////Нужно:
+//1. Анимации смерти;
+//2. Оставлять после себя лужи крови
+//3. Навести порядок в коде;
+
 public class Sc_Enemy : MonoBehaviour
 {
     [SerializeField] private Transform player;
@@ -54,5 +59,9 @@ public class Sc_Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    
+    public void SetPlayer(Transform playerTransform)
+    {
+        player = playerTransform;
+    }
 }
+
