@@ -15,6 +15,7 @@ public class Sc_Enemy : MonoBehaviour
     [Header("Parametrs Enemy")]
     [SerializeField] private float health;
     [SerializeField] private float speed;
+    public bool isDead = false;
     
     private void Start()
     {
@@ -57,7 +58,10 @@ public class Sc_Enemy : MonoBehaviour
     }
     private void Death()
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        isDead = true;
+        Debug.Log("isDead = true");
+        Sc_EvetManager.SendEnemyKilled();
     }
     public void SetPlayer(Transform playerTransform)
     {

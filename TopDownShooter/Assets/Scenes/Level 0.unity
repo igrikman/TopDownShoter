@@ -59926,7 +59926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2115802617383195320, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: m_Name
-      value: Spawner
+      value: GameController
       objectReference: {fileID: 0}
     - target: {fileID: 2115802617383195321, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: m_RootOrder
@@ -59978,16 +59978,28 @@ PrefabInstance:
       objectReference: {fileID: 1586624215}
     - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: spawnDelay
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: enemyPrefab
       value: 
       objectReference: {fileID: 4458853554307188513, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
     - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
+      propertyPath: enemyGameObj
+      value: 
+      objectReference: {fileID: 4458853554307188515, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
+    - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: enemyPrefabs
       value: 
       objectReference: {fileID: 4458853554307188515, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
+    - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 1586624215}
+    - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
+      propertyPath: playerGameObj
+      value: 
+      objectReference: {fileID: 1586624215}
     - target: {fileID: 2712010391189374458, guid: 4a4a180a1b4dbeb4e901d6cd5bf28424, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 1
@@ -60032,6 +60044,10 @@ PrefabInstance:
     - target: {fileID: 4458853554307188515, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458853554307188515, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4458853554307188516, guid: 524c14fcfe86b6f46a396b43bb654677, type: 3}
       propertyPath: m_RootOrder
